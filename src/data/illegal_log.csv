@@ -1,0 +1,3 @@
+"illegal_log.csv" is intended to be used for logging unknown license plates. Initially, it can be created as an empty CSV file with appropriate headers. Here are the contents for the file:
+
+plate_number,timestamp,image_path

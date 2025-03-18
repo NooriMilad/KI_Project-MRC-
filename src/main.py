@@ -9,7 +9,7 @@ import time
 
 def main():
     # Load allowed plates from CSV
-    allowed_plates = pd.read_csv('data/allowed_plates.csv')['plate'].tolist()
+    allowed_plates = pd.read_csv("src/data/allowed_plates.csv")["plate"].tolist()
     
     # Initialize YOLO detector
     yolo_detector = YOLODetector()
@@ -49,7 +49,7 @@ def main():
                     access_denied += 1
                     dashboard.update_display(plate_text, "Access Denied")
                     log_illegal_plate(plate_text)
-                    save_image(frame, f"data/illegal_{plate_text}.jpg")
+                    save_image(frame, f"src/data/illegal_{plate_text}.jpg")
 
         # Update dashboard statistics
         stats = {
